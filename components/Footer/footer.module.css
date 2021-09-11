@@ -1,0 +1,20 @@
+.footerInner {
+  font-size: var(--font-size-xs);
+  color: var(--color-grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.footerList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footerList li + li {
+  margin-top: var(--space-s);
+}
+
+.footerDate {
+  margin-top: var(--space-m);
+}

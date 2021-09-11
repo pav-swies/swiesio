@@ -1,0 +1,20 @@
+.icon {
+  display: inline-block;
+  width: calc(var(--space-s) * 2);
+  vertical-align: middle;
+}
+
+.icon svg {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+  height: auto;
+  fill: currentColor;
+  transition: fill var(--transition);
+}
+
+.icon svg * {
+  fill: currentColor;
+  transition: fill var(--transition);
+}

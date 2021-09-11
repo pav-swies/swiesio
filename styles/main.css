@@ -1,0 +1,106 @@
+@import './reset.css';
+
+:root {
+  --color-white: white;
+  --color-grey: grey;
+  --color-black: black;
+  --color-electric: greenyellow;
+
+  --space-base: 1rem;
+  --space-xs: calc(var(--space-base) * 0.5);
+  --space-s: calc(var(--space-base) * 1);
+  --space-m: calc(var(--space-base) * 2.5);
+  --space-l: calc(var(--space-base) * 5);
+  --space-xl: calc(var(--space-base) * 8);
+
+  --font-family: 'Inter', sans-serif;
+  --font-size-xs: 0.8rem;
+  --font-size-s: 1rem;
+  --font-size-m: 1.2rem;
+  --font-size-l: 1.5rem;
+
+  --line-height-m: 1.6em;
+  --line-height-l: 1.7em;
+
+  --page-gutter: var(--space-m);
+  --content-max-width: 40rem;
+
+  --transition: 0.2s ease;
+}
+
+@media only screen and (min-width: 800px) {
+  :root {
+    --page-gutter: var(--space-l);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --page-gutter: var(--space-xl);
+  }
+}
+
+::selection {
+  background-color: var(--color-electric);
+  color: var(--color-black);
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-m);
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: var(--font-size-m);
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: var(--transition);
+}
+
+p {
+  max-width: 50ch;
+}
+
+p + p {
+  margin-top: var(--space-m);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-s);
+  font-weight: 700;
+}
+
+ul {
+  padding-left: calc(var(--space-s) + 3px);
+  list-style: square;
+}
+
+ul li + li {
+  margin-top: var(--space-xs);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

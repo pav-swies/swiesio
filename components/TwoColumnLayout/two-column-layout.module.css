@@ -1,0 +1,45 @@
+.twoColumnLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-s);
+}
+
+@media only screen and (min-width: 800px) {
+  .twoColumnLayout {
+    grid-template-columns: var(--space-xl) auto;
+    gap: var(--space-m);
+  }
+}
+
+.twoColumnLayout + .twoColumnLayout {
+  margin-top: var(--space-m);
+}
+
+@media only screen and (min-width: 800px) {
+  .twoColumnLayout + .twoColumnLayout {
+    margin-top: var(--space-l);
+  }
+}
+
+.TwoColumnLayoutTitle {
+  font-size: var(--font-size-s);
+}
+
+.TwoColumnLayoutTitle i {
+  width: 1.5rem;
+  vertical-align: baseline;
+}
+
+.TwoColumnLayoutSubtitle {
+  font-size: var(--font-size-xs);
+  color: var(--color-grey);
+}
+
+.TwoColumnLayoutSticky {
+  position: relative;
+}
+
+.TwoColumnLayoutSticky > * {
+  position: sticky;
+  top: var(--space-m);
+}

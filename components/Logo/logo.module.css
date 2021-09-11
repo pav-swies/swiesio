@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--space-s) * 2);
+  height: calc(var(--space-s) * 2);
+  margin-right: var(--space-m);
+  margin-bottom: var(--space-m);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  pointer-events: none;
+  user-select: none;
+}

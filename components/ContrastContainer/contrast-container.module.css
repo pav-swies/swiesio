@@ -1,0 +1,46 @@
+.contrastContainer {
+  --space-contrast-container: calc(var(--page-gutter) / 2);
+  position: relative;
+  width: 100%;
+  background-color: var(--color-electric);
+  padding-right: var(--space-contrast-container);
+  padding-left: var(--space-contrast-container);
+}
+
+.contrastContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--space-contrast-container);
+  height: var(--space-contrast-container);
+  background-color: var(--color-white);
+}
+
+.contrastContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--space-contrast-container);
+  height: var(--space-contrast-container);
+  background-color: var(--color-white);
+}
+
+.contrastContainerInner {
+  position: relative;
+  top: var(--space-contrast-container);
+  width: 100%;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding-top: calc(var(--space-contrast-container) * 1.5);
+  padding-right: var(--space-contrast-container);
+  padding-bottom: calc(var(--space-contrast-container) * 1.5);
+  padding-left: var(--space-contrast-container);
+  z-index: 0;
+}
+
+.contrastContainerInner a:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
