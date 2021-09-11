@@ -20,11 +20,11 @@ const Home = () => {
         <p>
           I love to work with React, but I’m always dabbling with other tech like Svelte. You can view some of my work on{' '}
           <ExternalLink link="https://codesandbox.io/u/pav-swies" highlighted>
-            <Icon icon="codesandbox" />
+            <Icon icon="codesandbox" hiddenText="CodeSandbox" />
           </ExternalLink>{' '}
           and{' '}
           <ExternalLink link="https://github.com/pav-swies" highlighted>
-            <Icon icon="github" />
+            <Icon icon="github" hiddenText="GitHub" />
           </ExternalLink>
           .
         </p>

@@ -1,6 +1,5 @@
 .footerInner {
   font-size: var(--font-size-xs);
-  color: var(--color-grey);
   display: flex;
   flex-direction: column;
 }
