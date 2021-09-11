@@ -1,2 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
+Host: https://swies.io
+
+# Sitemaps
+Sitemap: https://swies.io/sitemap.xml
