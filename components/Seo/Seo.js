@@ -10,7 +10,6 @@ const Seo = ({ title, description, keywords, featuredImage }) => {
         {description && <meta content={description} name="description" />}
         {keywords && <meta content={keywords} name="keywords" />}
         <meta content="follow, index" name="robots" />
-        <link href={url} rel="canonical" />
         <meta content="en_GB" property="og:locale" />
         <meta content={formattedTitle} property="og:title" />
         <meta content={description} property="og:description" />
@@ -21,6 +20,7 @@ const Seo = ({ title, description, keywords, featuredImage }) => {
         <meta content="@p_swies" name="twitter:site" />
         <meta content="@p_swies" name="twitter:creator" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href={url} rel="canonical" />
       </Head>
     </>
   );
