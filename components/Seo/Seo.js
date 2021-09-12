@@ -15,12 +15,8 @@ const Seo = ({ title, description, keywords, featuredImage }) => {
         <meta content={formattedTitle} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={url} property="og:url" />
-        {featuredImage && (
-          <>
-            <meta content={featuredImage ? featuredImage : `${url}/default.jpg`} property="og:image" />
-            <meta content={description} property="og:image:alt" />
-          </>
-        )}
+        <meta content={featuredImage ? featuredImage : `${url}/default.jpg`} property="og:image" />
+        <meta content={description} property="og:image:alt" />
         <meta content="summary_large_image" name="twitter:card" />
         <meta content="@p_swies" name="twitter:site" />
         <meta content="@p_swies" name="twitter:creator" />
