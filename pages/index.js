@@ -13,7 +13,7 @@ const Home = () => {
       <Seo
         description="Hey, I'm Pawel Swies. I'm a web developer interested in UI design and development, UX and design systems."
         keywords="Developer, Web Developer, Pawel Swies, Pav Swies, React"
-        featuredImage="./default.png"
+        featuredImage="https://www.swies.io/default.png"
       />
       <Header>
         <h1 className="visually-hidden">Pawel Swies — Web Developer</h1>
