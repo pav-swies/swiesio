@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import ContrastContainer from '../components/ContrastContainer';
 import TwoColumnLayout from '../components/TwoColumnLayout';
 import ExternalLink from '../components/ExternalLink';
+import ContentNoWrap from '../components/ContentNoWrap';
 import Icon from '../components/Icon';
 import Footer from '../components/Footer';
 
@@ -23,10 +24,12 @@ const Home = () => {
             <Icon icon="codesandbox" hiddenText="CodeSandbox" />
           </ExternalLink>{' '}
           and{' '}
-          <ExternalLink link="https://github.com/pav-swies" highlighted>
-            <Icon icon="github" hiddenText="GitHub" />
-          </ExternalLink>
-          .
+          <ContentNoWrap>
+            <ExternalLink link="https://github.com/pav-swies" highlighted>
+              <Icon icon="github" hiddenText="GitHub" />
+            </ExternalLink>
+            .
+          </ContentNoWrap>
         </p>
         <p>
           You can reach out to me on{' '}
@@ -34,10 +37,12 @@ const Home = () => {
             <Icon icon="twitter" hiddenText="Twitter" />
           </ExternalLink>{' '}
           or{' '}
-          <ExternalLink link="https://www.linkedin.com/in/pawel-swies-63608016b/" highlighted>
-            <Icon icon="linkedin" hiddenText="LinkedIn" />
-          </ExternalLink>
-          .
+          <ContentNoWrap>
+            <ExternalLink link="https://www.linkedin.com/in/pawel-swies-63608016b/" highlighted>
+              <Icon icon="linkedin" hiddenText="LinkedIn" />
+            </ExternalLink>
+            .
+          </ContentNoWrap>
         </p>
       </Header>
       <main>
