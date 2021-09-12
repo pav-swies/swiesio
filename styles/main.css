@@ -59,6 +59,7 @@
 }
 
 body {
+  background-color: var(--color-white);
   color: var(--color-black);
   font-weight: 500;
   font-size: var(--font-size-s);
