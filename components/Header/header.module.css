@@ -20,7 +20,7 @@
 
 @media only screen and (min-width: 800px) {
   .header > div {
-    padding-top: calc(var(--page-gutter) / 1.5);
-    padding-bottom: calc(var(--page-gutter) * 1);
+    padding-top: calc(var(--page-gutter) / 1.2);
+    padding-bottom: calc(var(--page-gutter) * 1.2);
   }
 }
