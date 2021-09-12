@@ -10,11 +10,7 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <>
-      <Seo
-        description="Hey, I'm Pawel Swies. I'm a web developer interested in UI design and development, UX and design systems."
-        keywords="Developer, Web Developer, Pawel Swies, Pav Swies, React"
-        featuredImage="https://www.swies.io/default.png"
-      />
+      <Seo description="Hey, I'm Pawel Swies. I'm a web developer interested in UI design and development, UX and design systems." keywords="Developer, Web Developer, Pawel Swies, Pav Swies, React" />
       <Header>
         <h1 className="visually-hidden">Pawel Swies — Web Developer</h1>
         <p>Hey, I’m Pawel Swies. I’m a web developer interested in UI design and development, UX and design systems.</p>
