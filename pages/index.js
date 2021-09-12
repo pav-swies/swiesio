@@ -42,7 +42,7 @@ const Home = () => {
       </Header>
       <main>
         <ContrastContainer>
-          <TwoColumnLayout title="Experience" sticky>
+          <TwoColumnLayout title="Experience" sectionTitle sticky>
             <p>
               I specialise in building robust and accessible user interfaces. I’ve been involved in building UI’s for many projects across many industries, including Uber for Business and Santander.
             </p>
