@@ -1,6 +1,7 @@
 .externalLinkHighlighted {
   position: relative;
-  display: inline-table;
+  display: inline-block;
+  margin-bottom: -0.5em;
   color: var(--color-black);
   text-decoration: underline;
   overflow: hidden;

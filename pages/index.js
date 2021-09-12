@@ -49,7 +49,11 @@ const Home = () => {
         <ContrastContainer>
           <TwoColumnLayout title="Experience" sectionTitle sticky>
             <p>
-              I specialise in building robust and accessible user interfaces. I’ve been involved in building UI’s for many projects across many industries, including Uber for Business and Santander.
+              I specialise in building robust
+              <ExternalLink link="https://codesandbox.io/u/pav-swies" highlighted>
+                <Icon icon="codesandbox" hiddenText="CodeSandbox" />
+              </ExternalLink>{' '}
+              and accessible user interfaces. I’ve been involved in building UI’s for many projects across many industries, including Uber for Business and Santander.
             </p>
           </TwoColumnLayout>
           <TwoColumnLayout title="Huler" subtitle="2021 — Present" sticky>
