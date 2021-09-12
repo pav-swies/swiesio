@@ -3,7 +3,7 @@
   line-height: var(--line-height-m);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 800px) {
   .header {
     font-size: var(--font-size-l);
     line-height: var(--line-height-l);
@@ -19,6 +19,13 @@
 }
 
 @media only screen and (min-width: 800px) {
+  .header > div {
+    padding-top: calc(var(--page-gutter) * 1.2);
+    padding-bottom: calc(var(--page-gutter) * 1.5);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .header > div {
     padding-top: calc(var(--page-gutter) / 1.2);
     padding-bottom: calc(var(--page-gutter) * 1.2);

@@ -23,6 +23,7 @@
 
 .TwoColumnLayoutTitle {
   font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
 }
 
 .TwoColumnLayoutTitle i {
@@ -32,6 +33,7 @@
 
 .TwoColumnLayoutSubtitle {
   font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
   color: var(--color-grey);
 }
 
