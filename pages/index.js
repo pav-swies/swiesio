@@ -13,7 +13,7 @@ const Home = () => {
       <Seo description="Hey, I'm Pawel Swies. I'm a web developer interested in UI design and development, UX and design systems." keywords="Developer, Web Developer, Pawel Swies, Pav Swies, React" />
       <Header>
         <h1 className="visually-hidden">Pawel Swies — Web Developer</h1>
-        <p>Hey, I’m Pawel Swies. I’m a web developer interested in UI design and development, UX and design systems.</p>
+        <p>Hey, I’m Pawel Swies. I’m a web developer interested in UI design and development, UX, design systems & component libraries.</p>
         <p>
           I love to work with React, but I’m always dabbling with other tech like Svelte. You can view some of my work on{' '}
           <ExternalLink link="https://codesandbox.io/u/pav-swies" highlighted>
