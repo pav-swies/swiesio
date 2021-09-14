@@ -12,8 +12,8 @@
 :root {
   --color-white: white;
   --color-grey: grey;
-  --color-black: black;
-  --color-electric: greenyellow;
+  --color-black: #111111;
+  --color-accent: gold;
 
   --space-base: 1rem;
   --space-xs: calc(var(--space-base) * 0.5);
@@ -51,7 +51,7 @@
 }
 
 ::selection {
-  background-color: var(--color-electric);
+  background-color: var(--color-accent);
   color: var(--color-black);
 }
 

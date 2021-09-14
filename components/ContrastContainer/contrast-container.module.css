@@ -2,7 +2,7 @@
   --space-contrast-container: calc(var(--page-gutter) / 2);
   position: relative;
   width: 100%;
-  background-color: var(--color-electric);
+  background-color: var(--color-accent);
   padding-right: var(--space-contrast-container);
   padding-left: var(--space-contrast-container);
 }
