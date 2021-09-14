@@ -54,7 +54,7 @@ const Home = () => {
               <li>
                 <p>
                   Responsible for creating React components used across the <ExternalLink link="https://huler.io/">organisation’s website</ExternalLink> aimed to advertise their SaaS product. The site
-                  is built with React/Next.js and TypeScript.
+                  is built with Next.js and Styled Components.
                 </p>
               </li>
               <li>
