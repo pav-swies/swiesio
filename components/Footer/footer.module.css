@@ -14,5 +14,6 @@
 }
 
 .footerDate {
+  font-family: var(--secondary-font);
   margin-top: var(--space-m);
 }

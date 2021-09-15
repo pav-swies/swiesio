@@ -15,7 +15,7 @@ const Home = () => {
         <h1 className="visually-hidden">Pawel Swies — Web Developer</h1>
         <p>Hey, I’m Pawel Swies. I’m a web developer interested in UI design and development, UX, design systems & component libraries.</p>
         <p>
-          I love to work with React, but I’m always dabbling with other tech like Svelte. You can view some of my work on{' '}
+          I love to work with React, but I’m always dabbling with other tech like Svelte, Vue and anything on the Jamstack. You can view some of my work on{' '}
           <ExternalLink link="https://codesandbox.io/u/pav-swies" highlighted>
             <Icon icon="codesandbox" hiddenText="CodeSandbox" />
           </ExternalLink>{' '}

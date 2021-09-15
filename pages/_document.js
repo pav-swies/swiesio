@@ -15,6 +15,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#ffffff" />
           <link rel="preload" href="fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="fonts/spacegrotesk-var-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         </Head>
         <body>
           <Main />
