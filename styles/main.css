@@ -31,16 +31,24 @@
   --space-l: calc(var(--space-base) * 5);
   --space-xl: calc(var(--space-base) * 8);
 
-  --primary-font: 'Inter', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-  --secondary-font: 'Space Grotesk', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-secondary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+
   --font-size-xs: 0.8rem;
   --font-size-s: 1rem;
-  --font-size-m: 1.2rem;
-  --font-size-l: 1.5rem;
-  --line-height-xs: 1.5rem;
-  --line-height-s: 1.813rem;
-  --line-height-m: 2.063rem;
-  --line-height-l: 2.5rem;
+  --font-size-m: 1.125rem;
+  --font-size-l: 1.25rem;
+  --font-size-xl: 1.563rem;
+
+  --font-weight-light: 500;
+  --font-weight-medium: 560;
+  --font-weight-heavy: 700;
+
+  --line-height-xs: 1.76;
+  --line-height-s: 1.75;
+  --line-height-m: 1.72;
+  --line-height-l: 1.65;
+  --line-height-xl: 1.64;
 
   --page-gutter: var(--space-m);
   --content-max-width: 40rem;
@@ -48,13 +56,13 @@
   --transition: 0.2s ease;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   :root {
     --page-gutter: var(--space-l);
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 900px) {
   :root {
     --page-gutter: var(--space-xl);
   }
@@ -66,15 +74,15 @@
 }
 
 body {
-  font-family: var(--primary-font);
+  font-family: var(--font-primary);
   background-color: var(--color-white);
   color: var(--color-black);
-  font-weight: 520;
+  font-weight: var(--font-weight-light);
   font-size: var(--font-size-s);
   line-height: var(--line-height-s);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   body {
     font-size: var(--font-size-m);
     line-height: var(--line-height-m);
@@ -103,7 +111,7 @@ h5,
 h6 {
   font-size: var(--font-size-s);
   line-height: var(--line-height-s);
-  font-weight: 700;
+  font-weight: var(--font-weight-heavy);
 }
 
 ul {

@@ -4,7 +4,7 @@
   gap: var(--space-s);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   .twoColumnLayout {
     grid-template-columns: var(--space-xl) auto;
     gap: var(--space-m);
@@ -15,7 +15,7 @@
   margin-top: var(--space-m);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   .twoColumnLayout + .twoColumnLayout {
     margin-top: var(--space-l);
   }
@@ -31,7 +31,7 @@
 }
 
 .TwoColumnLayoutSubtitle {
-  font-family: var(--secondary-font);
+  font-family: var(--font-secondary);
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
   color: var(--color-grey);

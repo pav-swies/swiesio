@@ -1,12 +1,13 @@
 .header {
-  font-size: var(--font-size-m);
-  line-height: var(--line-height-m);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-l);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .header {
-    font-size: var(--font-size-l);
-    line-height: var(--line-height-l);
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-xl);
   }
 }
 
@@ -15,19 +16,25 @@
 }
 
 .header > div {
-  padding-bottom: calc(var(--page-gutter) * 2.5);
+  padding-bottom: calc(var(--page-gutter) * 2);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .header > div {
     padding-top: calc(var(--page-gutter) * 1.2);
     padding-bottom: calc(var(--page-gutter) * 1.5);
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .header > div {
+    padding-top: calc(var(--page-gutter) / 1.2);
+    padding-bottom: calc(var(--page-gutter) * 1.2);
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .header > div {
     padding-top: var(--page-gutter);
-    padding-bottom: calc(var(--page-gutter) * 1.2);
   }
 }
