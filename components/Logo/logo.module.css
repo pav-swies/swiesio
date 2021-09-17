@@ -2,10 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(var(--space-s) * 2);
-  height: calc(var(--space-s) * 2);
-  margin-right: var(--space-m);
-  margin-bottom: var(--space-m);
+  width: var(--space-l);
+  height: var(--space-l);
+  margin-right: var(--space-l);
+  margin-bottom: var(--space-xl);
   background-color: var(--color-black);
   color: var(--color-white);
   font-size: var(--font-size-xs);

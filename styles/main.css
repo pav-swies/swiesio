@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url(/fonts/inter.woff2) format('woff2');
+  src: url('/fonts/inter.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 300 700;
   font-display: swap;
-  src: url(/fonts/spacegrotesk.woff2) format('woff2');
+  src: url('/fonts/spacegrotesk.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -25,11 +25,17 @@
   --color-accent: #ffd700;
 
   --space-base: 1rem;
-  --space-xs: calc(var(--space-base) * 0.5);
+  --space-3xs: calc(var(--space-base) * 0.25);
+  --space-2xs: calc(var(--space-base) * 0.5);
+  --space-xs: calc(var(--space-base) * 0.75);
   --space-s: calc(var(--space-base) * 1);
-  --space-m: calc(var(--space-base) * 2.5);
-  --space-l: calc(var(--space-base) * 5);
-  --space-xl: calc(var(--space-base) * 8);
+  --space-m: calc(var(--space-base) * 1.5);
+  --space-l: calc(var(--space-base) * 2);
+  --space-xl: calc(var(--space-base) * 2.5);
+  --space-2xl: calc(var(--space-base) * 4);
+  --space-3xl: calc(var(--space-base) * 6);
+  --space-4xl: calc(var(--space-base) * 8);
+  --space-5xl: calc(var(--space-base) * 10);
 
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   --font-secondary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
@@ -50,21 +56,20 @@
   --line-height-l: 1.65;
   --line-height-xl: 1.64;
 
-  --page-gutter: var(--space-m);
-  --content-max-width: 40rem;
+  --page-gutter: var(--space-xl);
 
   --transition: 0.2s ease;
 }
 
 @media only screen and (min-width: 600px) {
   :root {
-    --page-gutter: var(--space-l);
+    --page-gutter: var(--space-3xl);
   }
 }
 
 @media only screen and (min-width: 900px) {
   :root {
-    --page-gutter: var(--space-xl);
+    --page-gutter: var(--space-4xl);
   }
 }
 
@@ -100,7 +105,7 @@ p {
 }
 
 p + p {
-  margin-top: var(--space-m);
+  margin-top: var(--space-l);
 }
 
 h1,

@@ -1,29 +1,29 @@
 .twoColumnLayout {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-s);
+  gap: var(--space-xs);
 }
 
 @media only screen and (min-width: 1200px) {
   .twoColumnLayout {
-    grid-template-columns: var(--space-xl) auto;
-    gap: var(--space-m);
+    grid-template-columns: var(--space-4xl) auto;
+    gap: var(--space-l);
   }
 }
 
 .twoColumnLayout + .twoColumnLayout {
-  margin-top: var(--space-m);
+  margin-top: var(--space-l);
 }
 
 @media only screen and (min-width: 1200px) {
   .twoColumnLayout + .twoColumnLayout {
-    margin-top: var(--space-l);
+    margin-top: var(--space-2xl);
   }
 }
 
 .TwoColumnLayoutTitle {
   font-size: var(--font-size-s);
-  line-height: var(--line-height-s);
+  line-height: var(--line-height-xs);
 }
 
 .TwoColumnLayoutTitle i {
