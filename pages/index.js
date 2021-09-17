@@ -58,7 +58,7 @@ const Home = () => {
                 </p>
               </li>
               <li>
-                <p>Built UI in Vue.js for an onboarding section of Santander’s HR software, which is used by thousands of their employee’s every day.</p>
+                <p>Built UI in Vue.js for an onboarding section of Santander’s HR software, which is used by hundreds of their employee’s every day.</p>
               </li>
             </ul>
           </TwoColumnLayout>
