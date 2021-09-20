@@ -6,8 +6,8 @@ const Seo = ({ title, description, keywords, featuredImage }) => {
     <>
       <Head>
         <title>{title ? `${title} — ${NAME}` : SITE_META_TITLE}</title>
-        {description && <meta content={description ? description : SITE_META_DESCRIPTION} name="description" />}
-        {keywords && <meta content={keywords ? `${keywords}, ${SITE_META_KEYWORDS}` : SITE_META_KEYWORDS} name="keywords" />}
+        <meta content={description ? description : SITE_META_DESCRIPTION} name="description" />}
+        <meta content={keywords ? `${keywords}, ${SITE_META_KEYWORDS}` : SITE_META_KEYWORDS} name="keywords" />}
         <meta content="follow, index" name="robots" />
         <meta content="en_GB" property="og:locale" />
         <meta content={title ? `${title} — ${NAME}` : SITE_META_TITLE} property="og:title" />
