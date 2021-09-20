@@ -1,31 +1,11 @@
 import TwoColumnLayout from '../TwoColumnLayout';
 import ContentContainer from '../ContentContainer';
 import ExternalLink from '../ExternalLink';
+import { TWITTER_LINK, GITHUB_LINK, CODESANDBOX_LINK, LINKEDIN_LINK, EMAIL_LINK } from '../../lib/constants';
 import style from './footer.module.css';
 
 const Footer = () => {
-  const links = [
-    {
-      text: 'GitHub',
-      url: 'https://github.com/pav-swies',
-    },
-    {
-      text: 'CodeSandbox',
-      url: 'https://codesandbox.io/u/pav-swies',
-    },
-    {
-      text: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/pawel-swies-63608016b/',
-    },
-    {
-      text: 'Twitter',
-      url: 'https://twitter.com/p_swies',
-    },
-    {
-      text: 'Mail',
-      url: 'mailto:pav.swies@gmail.com',
-    },
-  ];
+  const links = [GITHUB_LINK, CODESANDBOX_LINK, LINKEDIN_LINK, TWITTER_LINK, EMAIL_LINK];
   return (
     <footer>
       <ContentContainer>

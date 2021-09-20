@@ -6,37 +6,37 @@ import ExternalLink from '../components/ExternalLink';
 import ContentNoWrap from '../components/ContentNoWrap';
 import Icon from '../components/Icon';
 import Footer from '../components/Footer';
+import { SITE_META_DESCRIPTION, TWITTER_LINK, GITHUB_LINK, CODESANDBOX_LINK, LINKEDIN_LINK } from '../lib/constants';
 
 const Home = () => {
-  const metaTitle = 'Hey, I’m Pawel Swies. I’m a web developer interested in UI design and development, UX, design systems & component libraries.';
   return (
     <>
-      <Seo description={metaTitle} keywords="Developer, Web Developer, Pawel Swies, Pav Swies, React" />
+      <Seo />
       <Header>
         <h1 className="visually-hidden">Pawel Swies — Web Developer</h1>
-        <p>{metaTitle}</p>
+        <p>{SITE_META_DESCRIPTION}</p>
         <p>
           I love to work with React, but I’m always dabbling with other tech like Svelte, Vue and anything on the jamstack. You can view some of my work on{' '}
-          <ExternalLink link="https://codesandbox.io/u/pav-swies" highlighted>
-            <Icon icon="codesandbox" hiddenText="CodeSandbox" />
+          <ExternalLink link={CODESANDBOX_LINK.url} highlighted>
+            <Icon icon="codesandbox" hiddenText={CODESANDBOX_LINK.text} />
           </ExternalLink>{' '}
           and{' '}
           <ContentNoWrap>
-            <ExternalLink link="https://github.com/pav-swies" highlighted>
-              <Icon icon="github" hiddenText="GitHub" />
+            <ExternalLink link={GITHUB_LINK.url} highlighted>
+              <Icon icon="github" hiddenText={GITHUB_LINK.text} />
             </ExternalLink>
             .
           </ContentNoWrap>
         </p>
         <p>
           You can reach out to me on{' '}
-          <ExternalLink link="https://twitter.com/p_swies" highlighted>
-            <Icon icon="twitter" hiddenText="Twitter" />
+          <ExternalLink link={TWITTER_LINK.url} highlighted>
+            <Icon icon="twitter" hiddenText={TWITTER_LINK.text} />
           </ExternalLink>{' '}
           or{' '}
           <ContentNoWrap>
-            <ExternalLink link="https://www.linkedin.com/in/pawel-swies-63608016b/" highlighted>
-              <Icon icon="linkedin" hiddenText="LinkedIn" />
+            <ExternalLink link={LINKEDIN_LINK.url} highlighted>
+              <Icon icon="linkedin" hiddenText={LINKEDIN_LINK.text} />
             </ExternalLink>
             .
           </ContentNoWrap>
