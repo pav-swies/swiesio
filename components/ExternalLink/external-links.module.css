@@ -1,9 +1,9 @@
 .externalLinkHighlighted {
   position: relative;
   display: inline-block;
-  margin-bottom: -0.48em;
   color: var(--color-black);
   text-decoration: underline;
+  vertical-align: bottom;
   overflow: hidden;
   transition: color var(--transition);
 }
